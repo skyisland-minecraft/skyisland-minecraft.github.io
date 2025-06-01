@@ -6,9 +6,9 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
-  background-color: #0d1117;
-  color: #e6edf3;
+  font-family: 'Courier New', monospace; /* Monospace font for hacker feel */
+  background-color: #0d0d0d; /* Darker background for depth */
+  color: #e6edf3; /* Light text color */
   line-height: 1.6;
 }
 
@@ -20,43 +20,44 @@ body {
 
 /* Header */
 header {
-  background-color: #161b22;
+  background-color: #1c1c1c; /* Darker header */
   padding: 1rem 0;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 header h1 {
-  color: #58a6ff;
-  font-size: 2rem;
+  color: #ff007f; /* Bright pink for hacker vibe */
+  font-size: 2.5rem; /* Increased size */
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 nav a {
-  color: #e6edf3;
+  color: #e6edf3; /* Light text color */
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 nav a:hover {
-  color: #58a6ff;
+  color: #ff007f; /* Pink hover effect */
 }
 
 /* Hero */
 .hero {
   text-align: center;
   padding: 4rem 0;
-  background-color: #0d1117;
+  background-color: #0d0d0d; /* Dark background */
 }
 
 .hero h2 {
-  font-size: 2.5rem;
-  color: #58a6ff;
+  font-size: 3rem; /* Increased size */
+  color: #ff007f; /* Bright pink */
   margin-bottom: 1rem;
+  letter-spacing: 1px; /* Add spacing for style */
 }
 
 .hero p {
@@ -66,8 +67,8 @@ nav a:hover {
 }
 
 .btn {
-  background-color: #58a6ff;
-  color: #0d1117;
+  background-color: #ff007f; /* Bright pink button */
+  color: #0d0d0d; /* Dark button text */
   padding: 0.75rem 1.5rem;
   border: none;
   border-radius: 5px;
@@ -77,7 +78,7 @@ nav a:hover {
 }
 
 .btn:hover {
-  background-color: #1f6feb;
+  background-color: #cc0054; /* Darker pink on hover */
 }
 
 /* Features */
@@ -89,32 +90,32 @@ nav a:hover {
 }
 
 .feature {
-  background-color: #161b22;
+  background-color: #1c1c1c; /* Feature background */
   padding: 2rem;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .feature h3 {
-  color: #58a6ff;
+  color: #ff007f; /* Bright pink */
   margin-bottom: 0.5rem;
 }
 
 /* Testimonials */
 .testimonials {
-  background-color: #0d1117;
+  background-color: #0d0d0d; /* Dark background */
   padding: 4rem 0;
   text-align: center;
 }
 
 .testimonials h2 {
-  font-size: 2rem;
+  font-size: 2.5rem; /* Increased size */
   margin-bottom: 2rem;
-  color: #58a6ff;
+  color: #ff007f; /* Bright pink */
 }
 
 .testimonial {
-  background-color: #161b22;
+  background-color: #1c1c1c; /* Testimonial background */
   padding: 1.5rem;
   border-radius: 8px;
   margin-bottom: 1.5rem;
@@ -127,20 +128,20 @@ nav a:hover {
 
 .testimonial cite {
   font-size: 0.9rem;
-  color: #8b949e;
+  color: #8b949e; /* Grey text for citation */
 }
 
 /* CTA Section */
 .cta {
-  background-color: #161b22;
+  background-color: #1c1c1c; /* Dark CTA section */
   padding: 3rem 0;
   text-align: center;
 }
 
 .cta h2 {
-  font-size: 2rem;
+  font-size: 2.5rem; /* Increased size */
   margin-bottom: 1rem;
-  color: #58a6ff;
+  color: #ff007f; /* Bright pink */
 }
 
 .cta p {
@@ -149,19 +150,19 @@ nav a:hover {
 
 /* Footer */
 footer {
-  background-color: #161b22;
+  background-color: #1c1c1c; /* Dark footer */
   text-align: center;
   padding: 1.5rem 0;
-  color: #8b949e;
+  color: #8b949e; /* Grey footer text */
   font-size: 0.9rem;
 }
 
 footer a {
-  color: #8b949e;
+  color: #8b949e; /* Grey link color */
   text-decoration: none;
   margin: 0 0.5rem;
 }
 
 footer a:hover {
-  color: #58a6ff;
+  color: #ff007f; /* Pink on hover */
 }
