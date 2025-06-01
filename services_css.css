@@ -2,128 +2,135 @@
     Ultra Premium Glassmorphism Theme
 ------------------------------------*/
 
+
 :root {
-  --bg-main: #0d1117;
-  --bg-secondary: rgba(22, 27, 34, 0.85);
-  --bg-tertiary: rgba(31, 41, 55, 0.92);
-  --glass: rgba(22, 27, 34, 0.65);
-  --text-main: #f0f6fc;
-  --text-muted: #8b949e;
-  --text-accent: #58a6ff;
-  --text-info: #c9d1d9;
-  --accent: #58a6ff;
-  --accent-hover: #79c0ff;
-  --accent-glow: #00e0ff;
-  --border-color: #30363d;
-  --radius: 22px;
-  --shadow-sm: 0 6px 24px rgba(0,0,0,0.25);
-  --shadow-lg: 0 16px 48px rgba(0,0,0,0.45);
-  --transition: 0.35s cubic-bezier(.4,2,.6,1);
-  --blur: 18px;
+    --bg-main: #0d1117;
+    --bg-secondary: rgba(22, 27, 34, 0.85);
+    --bg-tertiary: rgba(31, 41, 55, 0.92);
+    --glass: rgba(22, 27, 34, 0.65);
+    --text-main: #f0f6fc;
+    --text-muted: #8b949e;
+    --text-accent: #58a6ff;
+    --text-info: #c9d1d9;
+    --accent: #58a6ff;
+    --accent-hover: #79c0ff;
+    --accent-glow: #00e0ff;
+    --border-color: #30363d;
+    --radius: 22px;
+    --shadow-sm: 0 6px 24px rgba(0,0,0,0.25);
+    --shadow-lg: 0 16px 48px rgba(0,0,0,0.45);
+    --transition: 0.35s cubic-bezier(.4,2,.6,1);
+    --blur: 18px;
 }
+
 
 /* Animated background */
 body::before {
-  content: "";
-  position: fixed;
-  z-index: -2;
-  inset: 0;
-  background: radial-gradient(ellipse at 60% 10%, #58a6ff33 0%, transparent 70%),
-              radial-gradient(ellipse at 20% 80%, #ffb30022 0%, transparent 70%),
-              linear-gradient(145deg, #0d1117 60%, #181c2f 100%);
-  animation: bgmove 18s linear infinite alternate;
+    content: "";
+    position: fixed;
+    z-index: -2;
+    inset: 0;
+    background: radial-gradient(ellipse at 60% 10%, #58a6ff33 0%, transparent 70%),
+                radial-gradient(ellipse at 20% 80%, #ffb30022 0%, transparent 70%),
+                linear-gradient(145deg, #0d1117 60%, #181c2f 100%);
+    animation: bgmove 18s linear infinite alternate;
 }
 @keyframes bgmove {
-  0% { background-position: 60% 10%, 20% 80%; }
-  100% { background-position: 65% 15%, 25% 85%; }
+    0% { background-position: 60% 10%, 20% 80%; }
+    100% { background-position: 65% 15%, 25% 85%; }
 }
 
+
 body {
-  font-family: 'Montserrat', 'Inter', Arial, sans-serif;
-  background: transparent;
-  color: var(--text-main);
-  line-height: 1.75;
-  font-size: 16px;
-  -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
-  min-height: 100vh;
+    font-family: 'Montserrat', 'Inter', Arial, sans-serif;
+    background: transparent;
+    color: var(--text-main);
+    line-height: 1.75;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    min-height: 100vh;
 }
+
 
 /*-----------------------------------
     Header / Navigation
 ------------------------------------*/
 header {
-  backdrop-filter: blur(var(--blur));
-  background: var(--glass);
-  padding: 2rem 0 1.2rem 0;
-  border-bottom: 1.5px solid var(--border-color);
-  box-shadow: var(--shadow-sm);
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  transition: background 0.4s;
+    backdrop-filter: blur(var(--blur));
+    background: var(--glass);
+    padding: 1rem 0 0.5rem 0; /* Adjusted padding */
+    border-bottom: 1.5px solid var(--border-color);
+    box-shadow: var(--shadow-sm);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    transition: background 0.4s;
 }
 header:hover {
-  background: var(--bg-secondary);
+    background: var(--bg-secondary);
 }
 header h1 {
-  font-size: 2.7rem;
-  text-align: center;
-  color: var(--accent);
-  font-weight: 900;
-  letter-spacing: 2px;
-  text-shadow: 0 0 24px var(--accent-glow), 0 2px 0 #222;
-  margin-bottom: 0.5rem;
-  transition: text-shadow 0.3s;
+    font-size: 2.2rem; /* Adjusted font size */
+    text-align: center;
+    color: var(--accent);
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-shadow: 0 0 24px var(--accent-glow), 0 2px 0 #222;
+    margin-bottom: 0.5rem;
+    transition: text-shadow 0.3s;
 }
 header h1:hover {
-  text-shadow: 0 0 48px var(--accent-glow), 0 2px 0 #222;
+    text-shadow: 0 0 48px var(--accent-glow), 0 2px 0 #222;
 }
 .header-flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5rem;
 }
 .nav-list {
-  list-style: none;
-  display: flex;
-  gap: 2.2rem;
-  margin: 0;
-  padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 2.2rem;
+    margin: 0;
+    padding: 0;
 }
 .nav-list a {
-  position: relative;
-  color: var(--text-main);
-  font-weight: 700;
-  font-size: 1.13rem;
-  letter-spacing: 0.5px;
-  padding: 0.2rem 0.5rem;
-  border-radius: 8px;
-  transition: color var(--transition), background var(--transition), box-shadow var(--transition);
+    position: relative;
+    color: var(--text-main);
+    font-weight: 700;
+    font-size: 1.13rem;
+    letter-spacing: 0.5px;
+    padding: 0.2rem 0.5rem;
+    border-radius: 8px;
+    transition: color var(--transition), background var(--transition), box-shadow var(--transition);
 }
 .nav-list a.active,
 .nav-list a:hover {
-  color: var(--accent);
-  background: rgba(88,166,255,0.08);
-  box-shadow: 0 2px 12px #58a6ff22;
+    color: var(--accent);
+    background: rgba(88,166,255,0.08);
+    box-shadow: 0 2px 12px #58a6ff22;
 }
 .nav-list a.active::after,
 .nav-list a:hover::after {
-  content: "";
-  display: block;
-  height: 3px;
-  width: 100%;
-  background: linear-gradient(90deg, var(--accent), var(--accent-hover));
-  border-radius: 2px;
-  margin-top: 2px;
-  animation: underline 0.4s;
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: linear-gradient(90deg, var(--accent), var(--accent-hover));
+    border-radius: 2px;
+    margin-top: 2px;
+    animation: underline 0.4s;
 }
 @keyframes underline {
-  from { width: 0; }
-  to { width: 100%; }
+    from { width: 0; }
+    to { width: 100%; }
 }
+
+/* The rest of your CSS remains unchanged */
+
 
 /*-----------------------------------
     Hero Section
