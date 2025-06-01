@@ -1,0 +1,167 @@
+/* Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0d1117;
+  color: #e6edf3;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Header */
+header {
+  background-color: #161b22;
+  padding: 1rem 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+header h1 {
+  color: #58a6ff;
+  font-size: 2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: #e6edf3;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #58a6ff;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 4rem 0;
+  background-color: #0d1117;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  color: #58a6ff;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+}
+
+.btn {
+  background-color: #58a6ff;
+  color: #0d1117;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #1f6feb;
+}
+
+/* Features */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 4rem 0;
+}
+
+.feature {
+  background-color: #161b22;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.feature h3 {
+  color: #58a6ff;
+  margin-bottom: 0.5rem;
+}
+
+/* Testimonials */
+.testimonials {
+  background-color: #0d1117;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #58a6ff;
+}
+
+.testimonial {
+  background-color: #161b22;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial blockquote {
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.testimonial cite {
+  font-size: 0.9rem;
+  color: #8b949e;
+}
+
+/* CTA Section */
+.cta {
+  background-color: #161b22;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #58a6ff;
+}
+
+.cta p {
+  margin-bottom: 1.5rem;
+}
+
+/* Footer */
+footer {
+  background-color: #161b22;
+  text-align: center;
+  padding: 1.5rem 0;
+  color: #8b949e;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #8b949e;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+footer a:hover {
+  color: #58a6ff;
+}

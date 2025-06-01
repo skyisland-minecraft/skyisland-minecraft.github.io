@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>H-osting | Contact</title>
+    <link rel="stylesheet" href="contact_css.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&display=swap" rel="stylesheet">
+    <!-- Ajoute ce script dans ton HTML -->
+    <canvas id="particles-js"></canvas>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <script>
+        particlesJS("particles-js", {
+            particles: {
+                number: { value: 60 },
+                color: { value: "#58a6ff" },
+                shape: { type: "circle" },
+                opacity: { value: 0.3 },
+                size: { value: 3 },
+                move: { enable: true, speed: 1.2 }
+            },
+            interactivity: {
+                events: { onhover: { enable: true, mode: "repulse" } }
+            }
+        });
+    </script>
+    <style>
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: -3;
+            top: 0;
+            left: 0;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('.section-animate');
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                    }
+                });
+            }, { threshold: 0.15 });
+
+            sections.forEach(section => observer.observe(section));
+        });
+    </script>
+    <div class="glass-blob" id="blob"></div>
+    <script>
+        document.addEventListener('mousemove', e => {
+            const blob = document.getElementById('blob');
+            blob.style.left = `${e.clientX}px`;
+            blob.style.top = `${e.clientY}px`;
+        });
+    </script>
+
+
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="container header-flex">
+            <h1 class="logo">H-osting</h1>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container">
+            <h2>
+                Contacte l’équipe <span class="nowrap">H-osting</span>
+            </h2>
+            <p>Une question, un besoin, un souci ? On te répond vite, avec le sourire et sans blabla inutile.</p>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-card">
+                <h3>Formulaire de contact</h3>
+                <form class="contact-form" action="/send" method="POST" autocomplete="off">
+                    <div class="form-group">
+                        <label for="name">Nom / Pseudo</label>
+                        <input type="text" id="name" name="name" placeholder="Ton nom ou pseudo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Adresse e-mail</label>
+                        <input type="email" id="email" name="email" placeholder="ton@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Sujet</label>
+                        <input type="text" id="subject" name="subject" placeholder="Sujet de ta demande" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Explique-nous tout !"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                </form>
+                <div class="contact-info">
+                    <p>Ou écris-nous directement à <a href="mailto:contact@h-osting.fr">contact@h-osting.fr</a></p>
+                    <p>Besoin d’aide urgente ? Rejoins notre <a href="https://discord.gg/tonserveur"
+                            target="_blank">Discord</a> !</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION CTA -->
+    <section class="cta">
+        <div class="container">
+            <h2>On t’attend !</h2>
+            <p>On répond vite, et toujours avec le smile 😃</p>
+            <a href="index.html" class="btn btn-secondary">Retour à l’accueil</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 H-osting — Des passionnés à ton service ⚡</p>
+            <p><a href="legal.html">Mentions légales</a> | <a href="terms.html">Conditions d'utilisation</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
